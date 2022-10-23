@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web-app:
+    image: httpd
+    ports:
+      - "80:80"
+    volumes:
+      - ./app:/usr/local/apache2/htdocs/
